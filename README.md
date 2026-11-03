@@ -45,23 +45,6 @@ For a local development server, you can use the VS Code **Live Server** extensio
 
 No build step, package installation or backend server is required.
 
-## Deployment
-
-### GitHub Pages
-
-1. Create a GitHub repository and upload all project files.
-2. Open **Settings → Pages** in the repository.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder, then save.
-5. Wait for GitHub Pages to publish the site. Copy the live URL shown in the Pages section.
-
-### Netlify
-
-1. Sign in to Netlify.
-2. Choose **Add new site → Import an existing project** and connect the GitHub repository, or drag and drop the project folder into Netlify's manual deploy area.
-3. No build command is required. Set the publish directory to the repository root if prompted.
-4. Copy the generated live website URL.
-
 ## Registration data note
 
 This is a front-end demonstration project. Successful registrations are stored in the visitor's browser using `localStorage` under the key `novaRegistrations`. This means:
