@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover experiences worth showing up for. Explore and register for standout events with NOVA." />
+  <meta name="theme-color" content="#0b0b12" />
+  <title>NOVA — Find Your Next Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span>Your next unforgettable experience is one click away.</span>
+    <a href="#events">Explore events <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="NOVA home"><span class="brand-mark">N</span><span>NOVA<span class="brand-period">.</span></span></a>
+      <div class="nav-links">
+        <a href="#events">Discover</a>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How it works</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Switch colour theme" title="Switch theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        </button>
+        <a class="button button-small button-primary nav-cta" href="#events">Find an event <span>↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#events">Discover</a><a href="#about">About</a><a href="#how-it-works">How it works</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE CITY IS YOURS TO EXPLORE</div>
+        <h1>Make room for<br>the <span class="gradient-text">extraordinary.</span></h1>
+        <p class="hero-description">From big ideas to late-night rhythms, find the events that bring your interests to life. Your next story starts here.</p>
+        <div class="hero-actions">
+          <a href="#events" class="button button-primary">Explore experiences <span>↗</span></a>
+          <a href="#how-it-works" class="text-link">How it works <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>AK</span><span>RM</span><span>JS</span><span>+</span></div>
+          <div><strong>Good things happen together.</strong><small>Find your people. Find your next thing.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-image-main">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=85" alt="Crowd enjoying a live music concert" />
+          <div class="image-overlay"></div>
+          <div class="hero-image-label"><span class="live-pulse"></span> EXPERIENCES THAT MOVE YOU</div>
+          <div class="floating-card floating-card-top"><span class="floating-icon">✦</span><div><strong>Curated for curiosity</strong><small>Something for every kind of mind</small></div></div>
+          <div class="floating-card floating-card-bottom"><div class="mini-date"><strong>18</strong><small>NOV</small></div><div><strong>Design After Dark</strong><small>Bhubaneswar · 6:30 PM</small></div><span class="arrow-circle">↗</span></div>
+        </div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <span class="hero-spark spark-one">✳</span><span class="hero-spark spark-two">✦</span>
+      </div>
+      <div class="hero-bottom-note"><span>01 / 03</span><span class="note-line"></span><span>SCROLL TO DISCOVER</span><span class="scroll-arrow">↓</span></div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div><strong>Curated</strong><span>Experiences, not noise</span></div>
+        <div><strong>All interests</strong><span>One place to discover</span></div>
+        <div><strong>Easy access</strong><span>Find. Choose. Show up.</span></div>
+        <div class="stats-aside"><span class="stats-star">✳</span> MAKE YOUR<br>TIME COUNT</div>
+      </div>
+    </section>
+
+    <section class="events-section section container" id="events">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</div><h2>Find your <span class="gradient-text">next thing.</span></h2></div>
+        <p>Ideas, people, music, movement. Pick a direction and see where it takes you.</p>
+      </div>
+
+      <div class="event-toolbar">
+        <div class="filter-pills" id="categoryFilters" role="group" aria-label="Filter events by category">
+          <button class="filter-pill active" data-category="All">All events <span class="filter-count" id="allCount">06</span></button>
+          <button class="filter-pill" data-category="Music">Music</button>
+          <button class="filter-pill" data-category="Technology">Technology</button>
+          <button class="filter-pill" data-category="Art & Design">Art & Design</button>
+          <button class="filter-pill" data-category="Lifestyle">Lifestyle</button>
+        </div>
+        <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg><input type="search" id="eventSearch" placeholder="Search events..." aria-label="Search events"><kbd>⌘ K</kbd></label>
+      </div>
+
+      <div class="featured-event" id="featuredEvent">
+        <div class="featured-image"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=85" alt="Technology conference audience" /><span class="featured-tag">EDITOR'S PICK</span></div>
+        <div class="featured-content">
+          <div class="event-meta"><span class="category-label">TECHNOLOGY</span><span>·</span><span>22 NOV 2026</span></div>
+          <h3>Future Forward<br>Summit 2026</h3>
+          <p>A day of bold ideas, emerging technology and conversations shaping what comes next. Meet the minds building tomorrow.</p>
+          <div class="featured-details"><span>⌖ Bhubaneswar, Odisha</span><span>◷ 10:00 AM onwards</span></div>
+          <button class="button button-light" data-featured-details>Explore event <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="events-grid" id="eventsGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><span>⌕</span><h3>No events found</h3><p>Try a different search or category.</p><button class="text-link" id="clearFilters">Clear filters →</button></div>
+      <div class="events-footer"><span><span class="footer-dot"></span> FRESH EXPERIENCES, ADDED REGULARLY</span><span id="resultsCount">Showing 6 events</span></div>
+    </section>
+
+    <section class="manifesto-section" id="about">
+      <div class="container manifesto-grid">
+        <div class="manifesto-mark">N<span>.</span></div>
+        <div class="manifesto-copy"><div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</div><h2>Life happens<br><span class="gradient-text">out there.</span></h2><p>NOVA is your space to discover experiences worth stepping out for. We bring together music, ideas, culture and community so you can spend less time searching and more time being there.</p><a href="#events" class="text-link">Find your next experience <span>↗</span></a></div>
+        <div class="manifesto-orbit"><div class="orbit-ring"></div><div class="orbit-core">GO<br>BE<br>THERE<span>✳</span></div><span class="orbit-caption">MAKE MEMORIES, NOT PLANS.</span></div>
+      </div>
+    </section>
+
+    <section class="how-section section container" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> NO FUSS, JUST FUN</div><h2>Three steps to <span class="gradient-text">out there.</span></h2></div><p>Your next great experience is closer than you think.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Discover</h3><p>Explore a handpicked mix of events. Search by name or browse by what you're into.</p><span class="step-decoration">✳</span></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon">↗</div><h3>Make it yours</h3><p>Found something you love? Check the details and save your spot in a few clicks.</p><span class="step-decoration">✳</span></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">✦</div><h3>Show up</h3><p>Get ready to meet new people, learn something or simply have a brilliant time.</p><span class="step-decoration">✳</span></article>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div class="cta-card"><div class="cta-decoration">✳</div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER</div><h2>Don't just hear<br>about <span>it later.</span></h2><p>Find something worth showing up for.</p><a href="#events" class="button button-dark">Explore events <span>↗</span></a><div class="cta-orb"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#"><span class="brand-mark">N</span><span>NOVA<span class="brand-period">.</span></span></a><p>Make room for the extraordinary.</p><div class="footer-links"><a href="#events">Discover</a><a href="#about">About</a><a href="#how-it-works">How it works</a></div></div>
+    <div class="container footer-bottom"><span>© 2026 NOVA. Made for the moments that matter.</span><span>DESIGNED TO GET YOU OUT THERE <b>✳</b></span></div>
+  </footer>
+
+  <div class="modal-backdrop hidden" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal event-modal">
+      <button class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      <div class="modal-image"><img id="modalImage" src="" alt=""><span class="modal-category" id="modalCategory"></span></div>
+      <div class="modal-body"><div class="event-meta" id="modalDate"></div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-info-grid"><div><small>VENUE</small><strong id="modalVenue"></strong></div><div><small>TIME</small><strong id="modalTime"></strong></div><div><small>ENTRY</small><strong id="modalPrice"></strong></div><div><small>COUNTDOWN</small><strong id="modalCountdown"></strong></div></div><button class="button button-primary button-full" id="modalRegister">Register for this event <span>↗</span></button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop hidden" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+    <div class="modal register-modal">
+      <button class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      <div class="register-heading"><div class="eyebrow"><span class="eyebrow-line"></span> SAVE YOUR SPOT</div><h2 id="registerTitle">You're almost<br><span class="gradient-text">there.</span></h2><p>Fill in your details and we'll save your registration.</p></div>
+      <form id="registrationForm" novalidate>
+        <input type="hidden" id="selectedEvent">
+        <label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" placeholder="Your name" autocomplete="name" required minlength="2">
+        <small class="field-error" id="nameError"></small>
+        <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <small class="field-error" id="emailError"></small>
+        <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" autocomplete="tel" required>
+        <small class="field-error" id="phoneError"></small>
+        <div class="selected-event-note"><span>REGISTERING FOR</span><strong id="registerEventName">Event name</strong></div>
+        <button class="button button-primary button-full" type="submit">Confirm registration <span>↗</span></button>
+        <p class="form-note">Your registration is stored locally in this browser for this demo.</p>
+      </form>
+      <div class="success-state hidden" id="successState"><div class="success-icon">✓</div><h3>You're on the list!</h3><p id="successMessage">Your registration has been saved.</p><button class="button button-primary button-full" id="successClose">Back to exploring</button></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
